@@ -64,14 +64,14 @@ int main() {
 
     
     printf("\n========================================================================\n");
-    printf("Gantt Chart\n\t");
+    printf("Gantt Chart\n");
     for (i = 0; i < index; i++) {
-        printf(" P[%d] ", process_order[i]);
+        printf(" P%d\t| ", process_order[i]);
     }
     printf("\n========================================================================\n");
 
     for (i = 0; i < index; i++) {
-        printf("%d\t", order_time[i]);
+        printf("%d  \t", order_time[i]);
     }
     printf("%d\n", time); 
     
